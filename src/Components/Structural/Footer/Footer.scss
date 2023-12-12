@@ -4,7 +4,7 @@
   background-color: $Blackberry;
   overflow: hidden;
   color: $White;
-  position: relative;
+  width: 100%;
   min-height: 100px;
   @media screen and (min-width: $BreakS) {
     min-height: 68px;
@@ -13,19 +13,43 @@
     min-height: 58px;
   }
 
+  .FooterInner {
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    height: 100%;
+    padding-top: 20px;
+  }
+
   .CopyrightContainer {
+    position:relative;
+    left:10px;
     text-align: center;
     transform: rotate(-4deg);
-    margin: 20px;
-    @media screen and (max-width: $BreakMS) {
+    @media screen and (min-width: $BreakS) {
       padding-bottom: 25px;
     }
+
+    @media screen and (min-width: $BreakL) {
+      padding-bottom: 25px;
+      left:150px;
+    }
+
+    @media screen and (min-width: $BreakL) {
+      padding-bottom: 25px;
+      left:340px;
+    }
+
+
+
   }
 
   .PrivacyPolicyContainer {
-    position: absolute;
+
     right: 20px;
-    bottom: 20px;
+    @media (min-width: $BreakS) {
+      bottom: 20px;
+    }
     a {
       color: $White;
     }
